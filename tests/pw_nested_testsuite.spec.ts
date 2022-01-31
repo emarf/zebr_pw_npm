@@ -1,5 +1,5 @@
 import {test, expect, Page} from '@playwright/test';
-import { ZebEmitter } from '../src/lib/ZebEmitter';
+import { ZebEmitter } from '@zebrunner/javascript-agent-playwright'
 const {firefox} = require('playwright');
 
 test.beforeAll(async () => {
@@ -64,13 +64,24 @@ test.describe('nested foo', () => {
     });
 
     test('basic test @broke', async ({page}, testInfo) => {
-      // testInfo.annotations.push({type: 'maintainer', description: 'emarf'});
       const title = page.locator('.navbar__inner .navbar__title');
       await expect(title).toHaveText('Playwright_broke');
     });
 
     test('my test1', async ({page}) => {
+      const tcmTestOptions = [
+        {
+          xrayTestKey: ['testKey', 'testKey1'],
+        },
+        {
+          testRailCaseId: ['caseId', 'caseId1'],
+        },
+        {
+          zephyrTestCaseKey: ['zephyr', 'zephyr1'],
+        },
+      ];
       ZebEmitter.setMaintainer('emarf');
+      ZebEmitter.addTcmTestOptions(tcmTestOptions);
       
       // Expect a title "to contain" a substring.
       await expect(page).toHaveTitle(/Playwright/);

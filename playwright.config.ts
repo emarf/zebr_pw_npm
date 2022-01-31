@@ -1,6 +1,5 @@
 // playwright.config.ts
 import {PlaywrightTestConfig, devices} from '@playwright/test';
-require('dotenv').config();
 
 const config: PlaywrightTestConfig = {
   forbidOnly: !!process.env.CI,
@@ -24,9 +23,10 @@ const config: PlaywrightTestConfig = {
       use: { ...devices['Desktop Safari'] },
     },
   ],
+  testDir: './tests',
   reporter: [
     [
-      './src/lib/zebReporter.ts',
+      '@zebrunner/javascript-agent-playwright',
       {
         // enabled: true,
         reportingServerHostname: 'https://webdriver.zebrunner.com',
