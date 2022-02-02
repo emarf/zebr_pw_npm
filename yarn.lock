@@ -650,10 +650,10 @@
   dependencies:
     "@types/node" "*"
 
-"@zebrunner/javascript-agent-playwright@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@zebrunner/javascript-agent-playwright/-/javascript-agent-playwright-0.0.1.tgz#6215caaaf50622650cb3f85fcadd0281f3161fba"
-  integrity sha512-mbVh0wUy2VBZ4li12RYtAlLSpaqIoXJcDc62nR051J1DEoRpNN2kjAskZvGaNCCGbSZeBlUuMi2gPpk+7xjL+A==
+"@zebrunner/javascript-agent-playwright@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@zebrunner/javascript-agent-playwright/-/javascript-agent-playwright-0.0.2.tgz#7510c3a02c323e837f5837075633ad97f36f6537"
+  integrity sha512-dkIiJILJbsm6AiGxNxQ4IQD7tx5bPaygxzJLK+xzTUjG6NtlssEwgr8pDTppvV7RFg0pG3gRn4drCQkpHQZljw==
   dependencies:
     "@ffmpeg-installer/ffmpeg" "^1.1.0"
     "@slack/web-api" "^6.6.0"
@@ -662,6 +662,7 @@
     fluent-ffmpeg "^2.1.2"
     form-data "^4.0.0"
     ua-parser-js "^1.0.2"
+    uuid "^8.3.2"
 
 agent-base@6, agent-base@^6.0.2:
   version "6.0.2"
@@ -1628,6 +1629,11 @@ ua-parser-js@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-1.0.2.tgz#e2976c34dbfb30b15d2c300b2a53eac87c57a775"
   integrity sha512-00y/AXhx0/SsnI51fTc0rLRmafiGOM4/O+ny10Ps7f+j/b8p/ZY11ytMgznXkOVo4GQ+KwQG5UQLkLGirsACRg==
+
+uuid@^8.3.2:
+  version "8.3.2"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
+  integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
 which@^1.1.1:
   version "1.3.1"

@@ -21,7 +21,7 @@
     "typescript": "^4.5.5"
   },
   "dependencies": {
-    "@zebrunner/javascript-agent-playwright": "^0.0.1",
+    "@zebrunner/javascript-agent-playwright": "^0.0.2",
     "dotenv": "^15.0.0"
   },
   "bugs": {
